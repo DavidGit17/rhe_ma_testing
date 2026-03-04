@@ -39,7 +39,7 @@ const galleryImages = [
       "Community Engagement - Learning and growing together through shared resources",
   },
   {
-    src: "/images/gallery-books.jpg",
+    src: "/images/gallery-books.png",
     alt: "A display of books and educational publications arranged on a wooden shelf",
     caption:
       "Published Resources - Educational books and study materials for every reader",
@@ -70,12 +70,12 @@ export default function GalleryPage() {
                 className="group overflow-hidden rounded-lg border border-border bg-card"
               >
                 {/* Image wrapper */}
-                <div className="relative aspect-[4/3] overflow-hidden">
+                <div className="relative aspect-[4/5] w-full overflow-hidden">
                   <Image
                     src={image.src}
                     alt={image.alt}
                     fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
 
