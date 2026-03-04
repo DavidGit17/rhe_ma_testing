@@ -5,8 +5,8 @@
  * Contains quick links, contact info, and a copyright notice.
  */
 
-import Link from "next/link"
-import { BookOpen } from "lucide-react"
+import Link from "next/link";
+import { BookOpen } from "lucide-react";
 
 /* -- Quick navigation links for the footer ------------------ */
 const footerLinks = [
@@ -15,7 +15,7 @@ const footerLinks = [
   { label: "Mission", href: "/mission" },
   { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/contact" },
-]
+];
 
 export default function Footer() {
   return (
@@ -27,11 +27,13 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2">
               <BookOpen className="h-5 w-5 text-accent" aria-hidden="true" />
-              <span className="font-serif text-lg font-bold">Word & Light</span>
+              <span className="font-serif text-lg font-bold">
+                HopeTransTech
+              </span>
             </div>
             <p className="mt-3 text-sm leading-relaxed opacity-70">
-              Making the Word of God accessible to every person, in every
-              language, through every medium.
+              Making important texts and educational materials accessible to
+              every person, in every language, through every medium.
             </p>
           </div>
 
@@ -74,11 +76,11 @@ export default function Footer() {
         {/* ---- Bottom Row: Copyright ---- */}
         <div className="mt-12 border-t border-primary-foreground/10 pt-8 text-center text-xs opacity-50">
           <p>
-            &copy; {new Date().getFullYear()} Word & Light Ministries. All
-            rights reserved.
+            &copy; {new Date().getFullYear()} HopeTransTech. All rights
+            reserved.
           </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

@@ -35,7 +35,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2" aria-label="Go to homepage">
           <BookOpen className="h-6 w-6 text-accent" aria-hidden="true" />
           <span className="font-serif text-xl font-bold tracking-tight text-foreground">
-            Word & Light
+            HopeTransTech
           </span>
         </Link>
 

@@ -5,41 +5,46 @@
  * Each image has a caption describing the scene.
  */
 
-import Image from "next/image"
+import Image from "next/image";
 
 /* -- Gallery images array ----------------------------------- */
 const galleryImages = [
   {
     src: "/images/gallery-bible.jpg",
-    alt: "A person reading a Bible with warm lighting",
-    caption: "Scripture Reading - Engaging with God's Word daily",
+    alt: "A person reading an open book at a desk with warm lighting",
+    caption:
+      "Independent Reading - Accessing translated texts and learning materials",
   },
   {
     src: "/images/gallery-translation.jpg",
     alt: "A translator working at a desk with manuscripts and a laptop",
-    caption: "Translation Work - Bringing the Word to new languages",
+    caption: "Translation Work - Bringing important texts to new languages",
   },
   {
     src: "/images/gallery-audio.jpg",
-    alt: "A professional audio recording studio with a microphone",
-    caption: "Audio Recording - Producing audio Bibles for oral communities",
+    alt: "A professional audio recording studio with a microphone and soundproofing panels",
+    caption:
+      "Audio Recording - Producing audio versions of educational materials for oral and visually impaired communities",
   },
   {
     src: "/images/gallery-asl.jpg",
     alt: "A person using American Sign Language in a community setting",
-    caption: "ASL Ministry - Making Scripture accessible through sign language",
+    caption:
+      "ASL Communication - Making information accessible through sign language for the Deaf community",
   },
   {
     src: "/images/gallery-community.jpg",
-    alt: "A diverse group in a community Bible study",
-    caption: "Community Fellowship - Growing together in faith and understanding",
+    alt: "A diverse group of people gathered together for a community learning session",
+    caption:
+      "Community Engagement - Learning and growing together through shared resources",
   },
   {
     src: "/images/gallery-books.jpg",
-    alt: "A display of Bibles and Christian books on a wooden shelf",
-    caption: "Published Resources - Books and study materials for every reader",
+    alt: "A display of books and educational publications arranged on a wooden shelf",
+    caption:
+      "Published Resources - Educational books and study materials for every reader",
   },
-]
+];
 
 export default function GalleryPage() {
   return (
@@ -49,7 +54,8 @@ export default function GalleryPage() {
         <div className="mx-auto max-w-6xl px-6 text-center">
           <h1 className="font-serif text-4xl font-bold md:text-5xl">Gallery</h1>
           <p className="mt-4 text-lg opacity-80">
-            A glimpse into our work around the world.
+            A glimpse into our translation, accessibility, and community work
+            around the world.
           </p>
         </div>
       </section>
@@ -83,5 +89,5 @@ export default function GalleryPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

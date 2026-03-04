@@ -6,38 +6,38 @@
  * and a call-to-action section.
  */
 
-import Image from "next/image"
-import Link from "next/link"
-import { BookOpen, Headphones, Languages, HandMetal } from "lucide-react"
-import ServiceCard from "@/components/service-card"
+import Image from "next/image";
+import Link from "next/link";
+import { BookOpen, Headphones, Languages, HandMetal } from "lucide-react";
+import ServiceCard from "@/components/service-card";
 
 /* -- List of services with icons and descriptions ----------- */
 const services = [
   {
-    title: "Bible Translations",
+    title: "Text Translation",
     description:
-      "Translating the Scriptures into languages that have never had access to the Word of God.",
+      "Translating important texts into languages that have never had access to them, breaking down language barriers for communities worldwide.",
     icon: Languages,
   },
   {
-    title: "Books",
+    title: "Educational Publications",
     description:
-      "Publishing faith-based books and study materials to deepen understanding of Scripture.",
+      "Publishing accessible books and learning materials to support literacy, education, and language understanding.",
     icon: BookOpen,
   },
   {
     title: "Audio Recordings",
     description:
-      "Producing high-quality audio recordings of Scripture for those who prefer to listen.",
+      "Producing high-quality audio recordings of texts and educational materials for those who prefer to listen or have visual impairments.",
     icon: Headphones,
   },
   {
     title: "ASL Support",
     description:
-      "Providing American Sign Language Bible resources for the Deaf and hard of hearing community.",
+      "Providing American Sign Language communication resources for the Deaf and hard of hearing community.",
     icon: HandMetal,
   },
-]
+];
 
 export default function HomePage() {
   return (
@@ -47,7 +47,7 @@ export default function HomePage() {
         {/* Background image with dark overlay */}
         <Image
           src="/images/hero.jpg"
-          alt="Open Bible on a table with warm golden light"
+          alt="An open book on a table with warm lighting, representing accessible reading materials"
           fill
           className="object-cover"
           priority
@@ -60,8 +60,8 @@ export default function HomePage() {
             Bringing the Word to Every Heart
           </h1>
           <p className="mt-6 text-pretty text-lg leading-relaxed opacity-85 md:text-xl">
-            Making the Bible accessible to every person, in every language,
-            through every medium.
+            Making important texts and educational materials accessible to every
+            person, in every language, through every medium.
           </p>
           <Link
             href="/about"
@@ -77,15 +77,15 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl">
-              Our Calling
+              Our Purpose
             </h2>
             <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-accent" />
             <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-              Word & Light Ministries is dedicated to breaking down barriers
-              that prevent people from encountering God&apos;s Word. Through
-              translation, publishing, audio production, and sign language
-              interpretation, we work to ensure that no one is left without
-              access to Scripture.
+              HopeTransTech is dedicated to breaking down the barriers that
+              prevent people from accessing important texts and information.
+              Through translation, publishing, audio production, and sign
+              language communication support, we work to ensure that no one is
+              left without access to the knowledge they need.
             </p>
           </div>
         </div>
@@ -117,7 +117,7 @@ export default function HomePage() {
       <section className="bg-background py-16">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl">
-            Join Our Mission
+            Get Involved
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
             Whether you want to support our translation work, volunteer your
@@ -133,5 +133,5 @@ export default function HomePage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

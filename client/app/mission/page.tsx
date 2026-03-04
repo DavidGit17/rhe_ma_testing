@@ -5,45 +5,45 @@
  * and community impact in detail.
  */
 
-import Image from "next/image"
-import Link from "next/link"
-import { Target, Globe, Ear, Hand, CheckCircle } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { Target, Globe, Ear, Hand, CheckCircle } from "lucide-react";
 
-/* -- Ministry goals ----------------------------------------- */
+/* -- Organization goals ------------------------------------- */
 const goals = [
   {
-    title: "Translate Scripture into 50+ New Languages",
+    title: "Translate Key Texts into 50+ New Languages",
     description:
-      "We aim to complete full Bible translations for 50 additional language groups that currently have no access to Scripture in their mother tongue.",
+      "We aim to complete full text translations for 50 additional language groups that currently have no access to important educational and informational materials in their mother tongue.",
     icon: Globe,
   },
   {
-    title: "Produce Audio Bibles for Every Translation",
+    title: "Produce Audio Recordings for Every Translation",
     description:
-      "For every translation completed, we produce professional audio recordings so communities with oral traditions can hear the Word spoken aloud.",
+      "For every translation completed, we produce professional audio recordings so communities with oral traditions and visually impaired individuals can access the content by listening.",
     icon: Ear,
   },
   {
-    title: "Expand ASL Scripture Resources",
+    title: "Expand ASL Communication Resources",
     description:
-      "We are building a comprehensive library of ASL Bible videos to serve the Deaf community with clear, expressive sign language interpretation.",
+      "We are building a comprehensive library of American Sign Language videos to serve the Deaf and hard of hearing community with clear, expressive communication support.",
     icon: Hand,
   },
   {
     title: "Equip Local Translators Worldwide",
     description:
-      "We train and mentor local translators in communities around the world so the work can continue long after our teams depart.",
+      "We train and mentor local translators in communities around the world so the work can continue and grow long after our teams depart.",
     icon: Target,
   },
-]
+];
 
 /* -- Community impact stats --------------------------------- */
 const impactStats = [
   { label: "Languages Translated", value: "34" },
-  { label: "Audio Bibles Produced", value: "28" },
+  { label: "Audio Recordings Produced", value: "28" },
   { label: "Countries Reached", value: "19" },
   { label: "People Impacted", value: "500K+" },
-]
+];
 
 export default function MissionPage() {
   return (
@@ -55,7 +55,7 @@ export default function MissionPage() {
             Our Mission
           </h1>
           <p className="mt-4 text-lg opacity-80">
-            Driven by faith. Guided by purpose. Measured by lives changed.
+            Driven by purpose. Guided by people. Measured by access created.
           </p>
         </div>
       </section>
@@ -81,16 +81,16 @@ export default function MissionPage() {
             <div className="mt-4 h-1 w-16 rounded-full bg-accent" />
             <p className="mt-6 leading-relaxed text-muted-foreground">
               Our mission is to ensure that every person on earth has the
-              opportunity to encounter God&apos;s Word in a language and
-              format they can understand. We do this through faithful Bible
-              translation, audio production, book publishing, and sign
-              language interpretation.
+              opportunity to access important texts and educational materials in
+              a language and format they can understand. We do this through
+              careful translation, audio production, book publishing, and sign
+              language communication support.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              We believe that access to Scripture is not a privilege but a
-              right. Language, disability, and geography should never be
-              barriers to experiencing the transformative power of
-              God&apos;s Word.
+              We believe that access to information and education is not a
+              privilege but a right. Language, disability, and geography should
+              never be barriers to accessing the knowledge and resources people
+              need.
             </p>
           </div>
         </div>
@@ -105,15 +105,15 @@ export default function MissionPage() {
             </h2>
             <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-accent" />
             <p className="mt-6 leading-relaxed text-muted-foreground">
-              These are the milestones we are working toward as we expand
-              our reach and deepen our impact.
+              These are the milestones we are working toward as we expand our
+              reach and deepen our impact.
             </p>
           </div>
 
           {/* Goals grid */}
           <div className="mt-12 grid gap-8 sm:grid-cols-2">
             {goals.map((goal) => {
-              const Icon = goal.icon
+              const Icon = goal.icon;
               return (
                 <div
                   key={goal.title}
@@ -131,7 +131,7 @@ export default function MissionPage() {
                     </p>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
         </div>
@@ -146,8 +146,8 @@ export default function MissionPage() {
             </h2>
             <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-accent" />
             <p className="mt-6 leading-relaxed text-muted-foreground">
-              By God&apos;s grace, our work has reached communities around the
-              globe. Here is a snapshot of our impact so far.
+              Our work has reached communities around the globe. Here is a
+              snapshot of the access we have helped create so far.
             </p>
           </div>
 
@@ -158,7 +158,10 @@ export default function MissionPage() {
                 key={stat.label}
                 className="flex flex-col items-center rounded-lg border border-border bg-card p-8 text-center"
               >
-                <CheckCircle className="h-6 w-6 text-accent" aria-hidden="true" />
+                <CheckCircle
+                  className="h-6 w-6 text-accent"
+                  aria-hidden="true"
+                />
                 <span className="mt-4 font-serif text-3xl font-bold text-foreground">
                   {stat.value}
                 </span>
@@ -181,5 +184,5 @@ export default function MissionPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }
