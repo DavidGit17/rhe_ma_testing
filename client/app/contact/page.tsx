@@ -67,7 +67,7 @@ export default function ContactPage() {
                     Email
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    info@wordandlight.org
+                    hopeschoolofmusic@gmail.com
                   </p>
                 </div>
               </div>
@@ -97,9 +97,9 @@ export default function ContactPage() {
                     Address
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    123 Faith Avenue
+                    Vijayawada, Andhra Pradesh
                     <br />
-                    Springfield, IL 62701
+                    India, 520015
                   </p>
                 </div>
               </div>

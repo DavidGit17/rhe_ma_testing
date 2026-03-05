@@ -28,7 +28,7 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <BookOpen className="h-5 w-5 text-accent" aria-hidden="true" />
               <span className="font-serif text-lg font-bold">
-                HopeTransTech
+                HopeSchoolOfMusic
               </span>
             </div>
             <p className="mt-3 text-sm leading-relaxed opacity-70">
@@ -62,12 +62,12 @@ export default function Footer() {
               Contact
             </h3>
             <address className="flex flex-col gap-2 not-italic text-sm opacity-70">
-              <span>info@wordandlight.org</span>
+              <span>HopeSchoolOfMusic@gmail.com</span>
               <span>(555) 123-4567</span>
               <span>
-                123 Faith Avenue
+                Vijayawada, Andhra Pradesh
                 <br />
-                Springfield, IL 62701
+                India, 520015.
               </span>
             </address>
           </div>
@@ -76,7 +76,7 @@ export default function Footer() {
         {/* ---- Bottom Row: Copyright ---- */}
         <div className="mt-12 border-t border-primary-foreground/10 pt-8 text-center text-xs opacity-50">
           <p>
-            &copy; {new Date().getFullYear()} HopeTransTech. All rights
+            &copy; {new Date().getFullYear()} HopeSchoolOfMusic. All rights
             reserved.
           </p>
         </div>

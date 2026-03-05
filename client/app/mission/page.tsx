@@ -178,7 +178,7 @@ export default function MissionPage() {
               href="/contact"
               className="inline-block rounded-md bg-primary px-8 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
             >
-              Partner With Us
+              Contact Us
             </Link>
           </div>
         </div>
